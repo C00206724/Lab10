@@ -60,7 +60,7 @@ GLuint	index,		//Index to draw
 //const string filename = "texture.tga";
 //const string filename = "cube.tga";
 
-const string filename = "texture.tga";
+const string filename = "cube.tga";
 
 int width; //width of texture
 int height; //height of texture
@@ -128,15 +128,15 @@ void Game::initialize()
 	vertex[2].color[1] = 0.0f;
 	vertex[2].color[2] = 0.0f;
 	vertex[2].color[3] = 0.0f;
+	
+	vertex[0].texel[0] = -0.5f;
+	vertex[0].texel[1] = -0.5f;
 
-	vertex[0].texel[0] = 0.5f;
-	vertex[0].texel[1] = 0.5f;
+	vertex[1].texel[0] = -0.5f;
+	vertex[1].texel[1] = 0.5f;
 
-	vertex[1].texel[0] = 1.0f;
-	vertex[1].texel[1] = 1.0f;
-
-	vertex[2].texel[0] = 1.0f;
-	vertex[2].texel[1] = 0.0f;
+	vertex[2].texel[0] = 0.5f;
+	vertex[2].texel[1] = 0.5f;
 
 	/*Index of Poly / Triangle to Draw */
 	triangles[0] = 0;   triangles[1] = 1;   triangles[2] = 2;

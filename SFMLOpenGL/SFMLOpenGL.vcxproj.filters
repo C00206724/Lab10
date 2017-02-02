@@ -45,4 +45,12 @@
   <ItemGroup>
     <None Include="..\README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="cube.tga">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="minecraft.tga">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
